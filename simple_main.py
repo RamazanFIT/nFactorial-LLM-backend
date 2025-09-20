@@ -219,5 +219,4 @@ async def root():
         "note": "Optimized for Vercel deployment"
     }
 
-# Экспорт для Vercel
-app = app
+# Экспорт для Vercel готов
