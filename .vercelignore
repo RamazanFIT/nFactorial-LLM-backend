@@ -1,0 +1,9 @@
+venv/
+__pycache__/
+*.pyc
+.env.local
+.DS_Store
+README.md
+Dockerfile
+docker-compose.yml
+.dockerignore
