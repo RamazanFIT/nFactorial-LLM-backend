@@ -1,23 +1,17 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "api/index.py",
-      "use": "@vercel/python"
+  "functions": {
+    "api/index.py": {
+      "runtime": "python3.9",
+      "maxDuration": 30
     }
-  ],
-  "routes": [
+  },
+  "rewrites": [
     {
-      "src": "/(.*)",
-      "dest": "api/index.py"
+      "source": "/(.*)",
+      "destination": "/api/index"
     }
   ],
   "env": {
     "PYTHONPATH": "."
-  },
-  "functions": {
-    "api/index.py": {
-      "maxDuration": 30
-    }
   }
 }
